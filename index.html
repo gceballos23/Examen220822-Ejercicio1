@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ejercicio 1</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Página 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Página 2</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="0"
+          class="active"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="2"
+        ></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://www.telam.com.ar/thumbs/bluesteel/advf/imagenes/2021/07/6102aa0683817_900.jpg"
+            alt="SeleccionArgntina1"
+            class="d-block w-100"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://www.telam.com.ar/thumbs/bluesteel/advf/imagenes/2021/07/6102a71ebd009_900.jpg"
+            alt="SeleccionArgetina2"
+            class="d-block w-100"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://www.telam.com.ar/thumbs/bluesteel/advf/imagenes/2021/07/6102b49d09bbc_900.jpg"
+            alt="SeleccionArgentina3"
+            class="d-block w-100"
+          />
+        </div>
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+
+    <div class="row">
+        <div class="col-sm-4  mt-3 ">
+          <div class="card" style="width: 32rem;">
+            <img
+              src="http://www.telam.com.ar/thumbs/bluesteel/advf/imagenes/editadas/6303edff04d4d_450.jpg"
+              width="100%"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h4 class="card-title">
+                  Manchester United, con un gran trabajo de Lisandro Martínez, venció a Liverpool
+
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 mt-3 ">
+          <div class="card" style="width: 32rem;">
+            <img
+              src="http://www.telam.com.ar/thumbs/bluesteel/advf/imagenes/2022/08/6303f04c56d3a_450.jpg"
+              width="100%"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h4 class="card-title">
+                  Roma, con Paulo Dybala, le ganó al Cremonese
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 mt-3">
+          <div class="card" style="width: 32rem;">
+            <img
+              src="http://www.telam.com.ar/thumbs/bluesteel/advf/imagenes/2022/06/62b785e95bd88_450.jpg"
+              width="100%"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h4 class="card-title">
+                  Argentina tendrá 10 torneos ITF en los últimos meses del 2022
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        <form action="/action_page.php" class="bg-light col-md-8 offset-md-2 mt-3">
+          <div class=" mt-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+          </div>
+          <div class=" mt-3">
+            <label for="comment">Comentarios:</label>
+            <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+          </div>
+          <div class="mt-3">
+              <input type="file" name="archivo" title="seleccionar fichero" id="importData" accept=".xls,.xlsx" />
+          </div>
+
+          <div class="mt-3">
+              <button type="submit" class="btn btn-primary">Enviar</button>
+          </div>
+
+
+        </form>
+
+  </body>
+</html>
